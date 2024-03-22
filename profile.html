@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chatroom Profile</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <h1>Profile:</h1>
+    <div class="container">
+        <div class="info">
+            <label for="username">Username:</label>
+            <p id="username"></p><br>
+
+        </div>
+        <div class="info">
+            <label for="email">Email:</label>
+            <p id="email"></p><br>
+        </div>
+        <div class="info">
+            <label for="bio">Bio:</label>
+            <textarea name="bio" id="bio" style="width:300px; height:150px;"></textarea><br> <!-- change it if u want for future -->    
+        </div>
+        <div class="info"> 
+            <label for="profile">Profile:</label>
+            <input type="image" id="profile" name="profile" accept="image/*" onchange="jsevent()">
+            <img src="#" alt="User Profile" id="profile" style="max-width: 100px; display: none;"><br>
+        </div>
+        <button onclick="jsevent()">Add to favorites</button>
+    </div>
+</body>
