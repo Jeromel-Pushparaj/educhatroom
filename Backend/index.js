@@ -2,6 +2,7 @@ const express = require('express');
 const { readFile } = require('fs');
 const app = express();
 
+//Making a server connection
 app.get('/', (request, response) =>{
 
     readFile('../Frontend/create_new_account.html','utf8', (err,html)=>{
