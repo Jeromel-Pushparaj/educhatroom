@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chatroom</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            height: 100vh;
+            display: flex;
+        }
+        .chat-window {
+            flex: 3;
+            border-right: 1px solid #ccc;
+            display: flex;
+            flex-direction: column;
+        }
+        .chat-header {
+            padding: 10px;
+            border-bottom: 1px solid #ccc;
+        }
+        .profile {
+            display: flex;
+            align-items: center;
+        }
+        .profile-image {
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            margin-right: 10px;
+        }
+        .contact-name {
+            font-weight: bold;
+        }
+        .chat-messages {
+            flex: 1;
+            overflow-y: auto;
+            padding: 10px;
+        }
+        .message-input {
+            padding: 10px;
+            border-top: 1px solid #ccc;
+            display: flex;
+            align-items: center;
+        }
+        .message-input input[type="text"] {
+            flex: 1;
+            padding: 8px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            margin-right: 10px;
+        }
+        .message-input input[type="submit"] {
+            padding: 8px 16px;
+            background-color: #007bff;
+            border: none;
+            color: #fff;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        .chat-list {
+            flex: 1;
+            padding: 10px;
+        }
+        .chat-list-header {
+            font-weight: bold;
+            margin-bottom: 10px;
+        }
+        .chat-profile {
+            display: flex;
+            align-items: center;
+            margin-bottom: 10px;
+        }
+        .chat-profile-image {
+            width: 30px;
+            height: 30px;
+            border-radius: 50%;
+            margin-right: 10px;
+        }
+        .chat-profile-name {
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <div class="chat-window">
+        <div class="chat-header">
+            <div class="profile">
+                <img class="profile-image" src="profile.png" alt="Profile Image">
+                <div class="contact-name">Contact Name</div>
+            </div>
+        </div>
+        <div class="chat-messages" id="chat-messages">
+            <!-- Chat messages will be dynamically added here -->
+        </div>
+        <div class="message-input">
+            <input type="text" id="message" placeholder="Type a message...">
+            <input type="submit" value="Send" id="send-button">
+        </div>
+    </div>
+    <div class="chat-list">
+        <div class="chat-list-header">Chat List</div>
+        <div class="chat-profile">
+            <img class="chat-profile-image" src="profile.png" alt="Profile Image">
+            <div class="chat-profile-name">User1</div>
+        </div>
+        <div class="chat-profile">
+            <img class="chat-profile-image" src="profile.png" alt="Profile Image">
+            <div class="chat-profile-name">User2</div>
+        </div>
+        <!-- Add more chat profiles here -->
+    </div>
+</body>
+</html>
+
+
+
