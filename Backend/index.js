@@ -25,12 +25,12 @@ app.listen(process.env.PORT || 3000,  ()=>console.log('App avalaible on port 300
 
 
 
-// var con = mysql.createConnection({
-//   host: "localhost",
-//   user: "root",
-//   password: "root",
-//   database: "educhatroom"
-// });
+var con = mysql.createConnection({
+  host: "localhost",
+  user: "root",
+  password: "root",
+  database: "educhatroom"
+});
 
 // con.connect(function(err) {
 //   if (err) throw err;
